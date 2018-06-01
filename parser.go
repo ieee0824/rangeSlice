@@ -33,7 +33,7 @@ func parse(v interface{}) (string, string, error) {
 
 func parseString(s string) (string, string, error) {
 	if s == "" {
-		return "", "", fmt.Errorf("input is empty string.")
+		return "", "", fmt.Errorf("input is empty string")
 	}
 	v := strings.Split(s, "..")
 	if len(v) != 2 {
